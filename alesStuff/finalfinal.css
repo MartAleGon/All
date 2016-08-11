@@ -1,0 +1,101 @@
+/*body{
+  margin-top: 50px;
+  background-color: cornflowerblue;
+}
+#container{
+  width: 100%;
+  margin: auto;
+
+}
+.navbar_elements{
+
+  padding-right:100px;
+  padding-left:120px;*/
+
+  width: 200px;
+
+
+}
+.navbar-default{
+  border-color: lightblue;
+
+}
+
+#map{
+  /*padding-right:80px;
+
+  padding-left: 80px;*/
+  background-color:fuchsia;
+}
+#resources{
+  /*padding-left: 100px;
+  padding-right: 100px;*/
+  background-color:greenyellow;
+}
+
+
+#timeline{
+  /*padding-left: 100px;
+  padding-right: 100px;*/
+  background-color:yellow;
+}
+#contacts{
+  /*padding-left: 70px;
+  padding-right: 70px;
+
+  padding-top: 15px;*/
+  background-color:red;
+}
+#help{
+  background-color:cornflowerblue;
+  /*padding-right: 100px;
+  padding-left: 100px;*/
+}
+
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+    }
+    .navbar .navbar-collapse {
+      text-align: left;
+
+    }
+}
+
+
+.divide-nav{
+  height: 50px;
+  background-color: #428bca;
+}
+
+.divide-text{
+    color:#fff;
+    line-height: 20px;
+    font-size:20px;
+    padding: 0;
+}
+
+.affix {
+  top: 50px;
+  width:100%;
+}
+
+.filler{
+  min-height: 2000px;
+}
+
+.navbar-form {
+   padding-left: 0;
+}
+
+.navbar-collapse{
+   padding-left:0;
+}
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+/*img {
+  filter: blur(3px);
+}*/

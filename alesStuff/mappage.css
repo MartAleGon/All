@@ -1,0 +1,40 @@
+body{
+background-image: url("https://images5.alphacoders.com/456/456536.jpg");
+}
+element.style{
+  padding-left: 200px;
+}
+
+#gcompanies{
+
+color: white;
+}
+
+
+#nosupport{
+
+color: white;
+}
+
+#googlemaps{
+  color:white;
+}
+
+.speech{
+    position: relative;
+    width: 600px;
+    height: 100px;
+    text-align: center;
+    line-height: 20px;
+    background-color: white;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 2px 2px 4px #888;
+    -moz-box-shadow: 2px 2px 4px #888;
+    box-shadow: 2px 2px 4px #888;
+
+}
+#marker26{
+  color: blue;
+}

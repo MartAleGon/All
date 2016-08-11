@@ -1,0 +1,13 @@
+var grayscale = Filters.filterImage(Filter.grayscale, image);
+// Note that ImageData values are clamped between 0 and 255, so we need
+// to use a Float32Array for the gradient values because they
+// range between -255 and 255.
+var vertical = Filters.convoluteFloat32(grayscale,
+  [ -1, 0, 1,
+    -2, 0, 2,
+    -1, 0, 1 ]);
+var horizontal = Filters.convoluteFloat32(grayscale,
+  [ -1, -2, -1,
+     0,  0,  0,
+     1,  2,  1 ]);
+var final_image = Filters.createImageData(vertical.width, vertical.height);

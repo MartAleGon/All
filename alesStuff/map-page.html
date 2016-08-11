@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet"href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="PROJECTFINAL.css">
+
+</head>
+
+<body>
+<h1 id="header">
+</h1>
+
+
+<ul class="navbarul">
+
+  <li class="navbarli"><a class="active" href="completeexample.html" >Home</a></li>
+  <li class="navbarli"><a href="resources-page.html" >Resources</a></li>
+  <li class="navbarli"><a href="timeline-page.html" >Timeline</a></li>
+  <li class="navbarli"><a href="map-page.html" >Map</a></li>
+  <li class="navbarli"><a href="media_page.html">Media</a></li>
+  <li class="navbarli"><a href="laws.html">Laws</a></li>
+
+</ul>
+
+<p class="speech">This is our map! Here you can find some locations around the US (more populated cities)
+to have a fun night at a friendly club or bar. Hope You Enjoy!
+- We realize there are thousands more places just email one of us if you have any recommendations for the map.
+</p>
+
+
+<body>
+
+<link rel="stylesheet" href="mappage.css">
+  <style>
+ #map {
+    width: 100%;
+  height: 600px;
+      }
+    </style>
+    <h3 id="googlemap">My Google Maps Demo</h3>
+    <div id="map"></div>
+  </head>
+    <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+            center: {lat: 33.909033, lng: -84.414632},
+            zoom: 6
+
+        });
+        marker1 = new google.maps.Marker({
+          map: map,
+          draggable: false,
+          animation: google.maps.Animation.DROP,
+          position: {lat:33.781637 , lng:-84.379888}
+        });
+      var contentString = '<div id="content1">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">Blakes Bar</h1>'+
+      '<div id="bodyContent">'+
+      '<p><b>Friendly Bar</b></p>'+'10th Street Atlanta 30329:Friendly Bar for everyone.'+
+      '<img src="http://thegavoice.com/wp-content/uploads/2015/07/IMG_2354-1024x683-750x400.jpg"/>'
+      '</div>'+
+      '</div>';
+
+  var infowindow1 = new google.maps.InfoWindow({
+    content: contentString
+
+  });
+  marker1.addListener('click', function() {
+    infowindow1.open(map, marker1);
+  });
+
+
+        marker2 = new google.maps.Marker({
+          map: map,
+          draggable: false,
+          animation: google.maps.Animation.DROP,
+          position: {lat: 33.796149, lng:-84.337071}
+        });
+        var contentString = '<div id="content2">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h2 id="firstHeading" class="firstHeading">Burkharts</h2>'+
+      '<div id="bodyContent">'+
+      '<p><b>Burckharts Pub</b>, </b>' +
+      '1492 Piedmont Avenue Northeast Atlanta Georgia 3032 '+
+      'Fun events on Fridays and Saturdays'+
+      '<img src="http://img1.10bestmedia.com/Images/Photos/220277/Screen-shot-2012-12-15-at-101909-AM_54_990x660_201406020339.png"/>'+
+      '</div>'+
+      '</div>';
+
+      var infowindow2 = new google.maps.InfoWindow({
+      content: contentString
+      });
+
+      marker2.addListener('click', function() {
+        infowindow2.open(map, marker2);
+      });
+
+
+        marker3 = new google.maps.Marker({
+          map: map,
+          draggable: false,
+          animation: google.maps.Animation.DROP,
+          position: {lat: 33.812756, lng:-84.358895}
+        });
+        var contentString = '<div id="content3">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3 id="firstHeading" class="firstHeading">Jungle</h3>'+
+      '<div id="bodyContent">'+
+      '<p><b>Jungle Atlanta</b>Fun night club ' +
+      '2115 Faulkner Road Northeast Atlanta Georgia 30324'+
+      '<img src="http://c308991.r91.cf1.rackcdn.com/SiteFiles/Venues/559/030bcb53-8626-4371-a215-a9fcc9b521fc.jpg" />'
+      '</div>'+
+      '</div>';
+
+      var infowindow3 = new google.maps.InfoWindow({
+      content: contentString
+
+      });
+      marker3.addListener('click', function() {
+        infowindow3.open(map, marker3);
+      });
+
+
+        marker4 = new google.maps.Marker({
+          map: map,
+          draggable: false,
+          animation: google.maps.Animation.DROP,
+          position: {lat:33.916156, lng:-84.355892}
+        });
+        var contentString = '<div id="content4">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h4 id="firstHeading" class="firstHeading">Lips Restaurant</h4>'+
+      '<div id="bodyContent">'+
+      '<p><b>Lips</b></p>, Drag Queen Show Palace'+'3011 Buford Highway Northeast Atlanta Georgia'+
+      '</div>'+
+      '</div>';
+
+      var infowindow4 = new google.maps.InfoWindow({
+        content: contentString
+
+    });
+      marker4.addListener('click', function() {
+    infowindow4.open(map, marker4);
+  });
+
+
+      marker5 = new google.maps.Marker({
+        map: map,
+        draggable: false,
+        animation: google.maps.Animation.DROP,
+        position: {lat:32.081698, lng:-81.094854}
+  });
+  var contentString = '<div id="content4">'+
+    '<div id="siteNotice">'+
+    '</div>'+
+    '<h4 id="firstHeading" class="firstHeading">Club One</h4>'+
+    '<div id="bodyContent">'+
+    '1 Jefferson Street Savannah Georgia'+
+    '<img src="http://img2.10bestmedia.com/Images/Photos/188446/ClubOne3_54_990x660_201406020114.jpg" />'+
+    '</div>'+
+    '</div>';
+
+    var infowindow5 = new google.maps.InfoWindow({
+      content: contentString
+
+
+
+    });
+      marker5.addListener('click', function() {
+        infowindow5.open(map, marker5);
+      });
+
+
+      marker6 = new google.maps.Marker({
+          map: map,
+          draggable: false,
+          animation: google.maps.Animation.DROP,
+          position: {lat:38.916826, lng:-77.024932}
+      });
+      var contentString = '<div id="content4">'+
+        '<div id="siteNotice">'+
+        '</div>'+
+        '<h4 id="firstHeading" class="firstHeading">Nellies Sports Bar</h4>'+
+        '<div id="bodyContent">'+
+        '<img src="https://www.nelliessportsbar.com/wp-content/uploads/2014/05/fvs5111-edit-copy-2-2048x1365.jpg"/>'+
+        'Nellies Sports Bar- fun events Sun-Tues-Wed-Sat'+
+        '900 U Street NW Washington, DC 20001'
+        '</div>'+
+        '</div>';
+        console.log(marker6);
+        var infowindow6 = new google.maps.InfoWindow({
+          content: contentString
+
+      });
+      marker6.addListener('click', function() {
+        infowindow6.open(map, marker6);
+      });
+
+
+        marker7 = new google.maps.Marker({
+          map: map,
+          draggable: false,
+          animation: google.maps.Animation.DROP,
+          position: {lat:38.917092, lng:-77.024932}
+      });
+      var contentString = '<div id="content4">'+
+        '<div id="siteNotice">'+
+        '</div>'+
+        '<h4 id="firstHeading" class="firstHeading">Town Dance Boutique</h4>'+
+        '<div id="bodyContent">'+
+        'Fun Dance club in D.C' +
+        '<img src="https://photos.smugmug.com/Events/LGBT/DC-Local-Parties/2013-12-28-DC-Kidd-Madonny--Town/i-ph3gX4S/0/XL/2013-12-29_kidd1_044-XL.jpg"/>'
+        '2009 8th Street Northwest (Corner of 8th Street and U)'
+        '</div>'+
+        '</div>';
+
+        var infowindow7 = new google.maps.InfoWindow({
+          content: contentString
+
+      });
+      marker7.addListener('click', function() {
+        infowindow7.open(map, marker7);
+});
+
+
+
+
+      marker8 = new google.maps.Marker({
+      map: map,
+      draggable: false,
+      animation: google.maps.Animation.DROP,
+      position: {lat:38.867474, lng:-77.010439}
+});
+      var contentString = '<div id="content4">'+
+        '<div id="siteNotice">'+
+        '</div>'+
+        '<h4 id="firstHeading" class="firstHeading">Ziegfelds</h4>'+
+        '<div id="bodyContent">'+
+        '1824 Half Street Southwest (doors open at 9pm)'+
+        '<img src="http://www.washingtonblade.com/content/files/2013/07/Ziegfelds_exterior_insert_c_Washington_Blade_by_Michael_Key.jpg"/>'
+        '</div>'+
+        '</div>';
+
+var infowindow8 = new google.maps.InfoWindow({
+content: contentString
+
+});
+marker8.addListener('click', function() {
+infowindow8.open(map, marker8);
+});
+
+
+marker9 = new google.maps.Marker({
+  map: map,
+  draggable: false,
+  animation: google.maps.Animation.DROP,
+  position: {lat:40.744594, lng:-73.998305}
+});
+var contentString = '<div id="content4">'+
+'<div id="siteNotice">'+
+'</div>'+
+'<h4 id="firstHeading" class="firstHeading">Barracuda</h4>'+
+'<div id="bodyContent">'+
+'Sushi Restaurant and Club/bar' +
+'<p><b>Barracuda Restaurant</b></p>, 275 W 22nd Street New York 10011'+
+'number-(212-645-8613)'
+'<img src="http://images1.villagevoice.com/imager/u/745xauto/6481317/7619846.0.jpg"/>'+
+'</div>'+
+'</div>';
+
+var infowindow9 = new google.maps.InfoWindow({
+content: contentString
+
+});
+marker9.addListener('click', function() {
+infowindow9.open(map, marker9);
+});
+
+
+marker10 = new google.maps.Marker({
+  map: map,
+  draggable: false,
+  animation: google.maps.Animation.DROP,
+  position: {lat:40.760626, lng:-73.989477}
+});
+var contentString = '<div id="content4">'+
+'<div id="siteNotice">'+
+'</div>'+
+'<h4 id="firstHeading" class="firstHeading">Dont Tell Mamma</h4>'+
+'<div id="bodyContent">'+
+'<img src="http://images.nymag.com/listings/bar/3donttellmama.jpg"/>'+
+'<p><b>Dont Tell Mamma</b></p>, Restaurant/club/bar'+
+'343 W 46th Street New York, New York - number(212-757-0788)'
+'</div>'+
+'</div>';
+
+var infowindow10 = new google.maps.InfoWindow({
+content: contentString
+
+});
+marker10.addListener('click', function() {
+infowindow10.open(map, marker10);
+});
+
+
+
+marker11 = new google.maps.Marker({
+  map: map,
+  draggable: false,
+  animation: google.maps.Animation.DROP,
+  position: {lat:40.727108, lng:-73.992015}
+});
+var contentString = '<div id="content4">'+
+'<div id="siteNotice">'+
+'</div>'+
+'<h4 id="firstHeading" class="firstHeading">Beige</h4>'+
+'<div id="bodyContent">'+
+'358 Bowery Street New York, NY'+
+'number-(212-467-2220)'
+'</div>'+
+'</div>';
+
+var infowindow11 = new google.maps.InfoWindow({
+content: contentString
+
+});
+marker11.addListener('click', function() {
+infowindow11.open(map, marker11);
+});
+//
+
+
+marker12 = new google.maps.Marker({
+  map: map,
+  draggable: false,
+  animation: google.maps.Animation.DROP,
+  position: {lat:40.765076, lng:-73.995986}
+});
+var contentString = '<div id="content4">'+
+'<div id="siteNotice">'+
+'</div>'+
+'<h4 id="firstHeading" class="firstHeading">Lucky Chengs</h4>'+
+'<div id="bodyContent">'+
+'<p><b>Lucky Chengs</b></p>,(Pan Asian, drag queen shows)'+
+'<img src="http://wordpress.suitey.com.s3.amazonaws.com/wp-content/uploads/2014/12/lucky-chengs.jpg"/>'
+'605 W 48th Street New York, NY'
+'</div>'+
+'</div>';
+
+var infowindow12 = new google.maps.InfoWindow({
+content: contentString
+
+});
+marker12.addListener('click', function() {
+infowindow12.open(map, marker12);
+});
+
+
+
+
+marker13 = new google.maps.Marker({
+  map: map,
+  draggable: false,
+  animation: google.maps.Animation.DROP,
+  position: {lat:40.719718, lng:-73.988757}
+});
+var contentString = '<div id="content4">'+
+'<div id="siteNotice">'+
+'</div>'+
+'<h4 id="firstHeading" class="firstHeading">Spectrum</h4>'+
+'<div id="bodyContent">'+'<p><b>Spectrum</b></p>,(Live Music Venue New York)'+
+'121 Ludlow Street #2 NY 10002'+
+'<img src="http://www.tribuneindia.com/2014/20141109/spectrum/tunein2.jpg"/>'
+'</div>'+
+'</div>';
+
+var infowindow13 = new google.maps.InfoWindow({
+content: contentString
+
+});
+marker13.addListener('click', function() {
+infowindow13.open(map, marker13);
+});
+
+
+
+
+marker14 = new google.maps.Marker({
+  map: map,
+  draggable: false,
+  animation: google.maps.Animation.DROP,
+  position: {lat:41.949820, lng:-87.658880}
+});
+var contentString = '<div id="content4">'+
+'<div id="siteNotice">'+
+'</div>'+
+'<h4 id="firstHeading" class="firstHeading">Queen</h4>'+
+'<div id="bodyContent">'+
+'<p><b>Queen! at Smart Bar</b></p>3On Sunday Nights (Queen) Every other day -730 North Clark Street Chicago IL'+
+'<img src="https://www.residentadvisor.net/images/events/flyer/2015/7/us-0719-733730-front.jpg"/>'+
+'</div>'+
+'</div>';
+
+var infowindow14 = new google.maps.InfoWindow({
+content: contentString
+
+});
+marker14.addListener('click', function() {
+infowindow14.open(map, marker14);
+});
+
+
+
+
+marker15 = new google.maps.Marker({
+  map: map,
+  draggable: false,
+  animation: google.maps.Animation.DROP,
+  position: {lat:41.909408, lng:-87.675587}
+});
+
+var contentString = '<div id="content4">'+
+'<div id="siteNotice">'+
+'</div>'+
+'<h4 id="firstHeading" class="firstHeading">Fabitat</h4>'+
+'<div id="bodyContent">'+
+'<p><b>Fabitat</b></p> DOOR NUMBER 3- 1527 North Milwaukee Avenue'
+'<img src="http://s1.evcdn.com/images/edpborder500/I0-001/018/013/952-2.jpeg_/fabitat-52.jpeg" />'
+'</div>'+
+'</div>';
+
+var infowindow15 = new google.maps.InfoWindow({
+content: contentString
+
+});
+marker15.addListener('click', function() {
+infowindow15.open(map, marker15);
+});
+
+
+
+
+marker16 = new google.maps.Marker({
+  map: map,
+  draggable: false,
+  animation: google.maps.Animation.DROP,
+  position: {lat:41.979708, lng:-87.657356}
+});
+var contentString = '<div id="content4">'+
+'<div id="siteNotice">'+
+'</div>'+
+'<h4 id="firstHeading" class="firstHeading">Martys Martini Bar</h4>'+
+'<div id="bodyContent">'+
+'<p><b>Lips</b></p> 1511 West Balmoral Street'+
+'Cozy and chic without being pretentious, Martys Martini Bar is an outstanding place to tuck yourself in at the bar'+
+'<img src="https://assets3.thrillist.com/v1/image/1626667/size/tl-stack_mobile/replay-beer-bourbon.jpg"/>'
+'</div>'+
+'</div>';
+
+var infowindow16 = new google.maps.InfoWindow({
+content: contentString
+
+});
+marker16.addListener('click', function() {
+infowindow16.open(map, marker16);
+});
+
+
+
+
+marker17 = new google.maps.Marker({
+  map: map,
+  draggable: false,
+  animation: google.maps.Animation.DROP,
+  position: {lat:41.857798, lng:-87.657356}
+});
+var contentString = '<div id="content4">'+
+'<div id="siteNotice">'+
+'</div>'+
+'<h4 id="firstHeading" class="firstHeading">OPT!ONZ</h4>'+
+'<div id="bodyContent">'+
+'<p><b>OptionsLips</b></p> fruity vibe to accompany your fruity beverages the last Monday of every month.'+
+'Punch House at 1227 West 18th Street Chicago IL'+
+'<img src="http://punchhousechicago.com/optonz-at-punch-house/"/>'
+'</div>'+
+'</div>';
+
+var infowindow17 = new google.maps.InfoWindow({
+content: contentString
+
+});
+marker17.addListener('click', function() {
+infowindow17.open(map, marker17);
+});
+
+
+
+marker18 = new google.maps.Marker({
+  map: map,
+  draggable: false,
+  animation: google.maps.Animation.DROP,
+  position: {lat:41.969261, lng:-87.659875}
+});
+var contentString = '<div id="content4">'+
+'<div id="siteNotice">'+
+'</div>'+
+'<h4 id="firstHeading" class="firstHeading">Crew</h4>'+
+'<div id="bodyContent">'+
+'<p><b>Crew</b></p>'+
+'4804 North Broadway Street'
+'An uptown LGBTQ friendly neighborhood thats great for regular weekely events'+
+'and a perfect palce to catch the game with friends.'
+'<img src="http://images.citysearch.net/assets/imgdb/merchant/2011/3/24/0/yDOuQxfb183.jpeg"/>'
+'</div>'+
+'</div>';
+
+var infowindow18 = new google.maps.InfoWindow({
+content: contentString
+
+});
+marker18.addListener('click', function() {
+infowindow18.open(map, marker18);
+});
+
+
+
+marker19 = new google.maps.Marker({
+  map: map,
+  draggable: false,
+  animation: google.maps.Animation.DROP,
+  position: {lat:34.083536, lng:-118.385118}
+});
+var contentString = '<div id="content4">'+
+'<div id="siteNotice">'+
+'</div>'+
+'<h4 id="firstHeading" class="firstHeading">The Abbey</h4>'+
+'<div id="bodyContent">'+
+'<p><b>The Abbey</b></p>'+
+'692 North Robertson Blvd West Hollywood CA'+
+'<img src="http://img1.10bestmedia.com/Images/Photos/284299/DanceFloor-Hi-Res_54_990x660.jpg"/>'
+'</div>'+
+'</div>';
+
+var infowindow18 = new google.maps.InfoWindow({
+content: contentString
+
+});
+marker19.addListener('click', function() {
+infowindow19.open(map, marker19);
+});
+
+
+
+marker20 = new google.maps.Marker({
+  map: map,
+  draggable: false,
+  animation: google.maps.Animation.DROP,
+  position: {lat:34.085808, lng:-118.383327}
+});
+var contentString = '<div id="content4">'+
+'<div id="siteNotice">'+
+'</div>'+
+'<h4 id="firstHeading" class="firstHeading">Trunks</h4>'+
+'<div id="bodyContent">'+
+'8809 Santa Monica Boulevard West Hollywood'
+'<img src="https://a2.muscache.com/locations/uploads/photo/image/22036/539_3961_0_3107_three_trunks-gay-bar-kalmbach054.jpg"/>'
+'</div>'+
+'</div>';
+
+var infowindow20 = new google.maps.InfoWindow({
+content: contentString
+
+});
+marker20.addListener('click', function() {
+infowindow20.open(map, marker20);
+});
+
+
+
+marker21 = new google.maps.Marker({
+  map: map,
+  draggable: false,
+  animation: google.maps.Animation.DROP,
+  position: {lat:34.095637, lng:-118.284203}
+});
+var contentString = '<div id="content4">'+
+'<div id="siteNotice">'+
+'</div>'+
+'<h4 id="firstHeading" class="firstHeading">Akbar</h4>'+
+'<div id="bodyContent">'+
+'<p><b>Akbar</b></p>'+
+'Fun Club haven for the cities best promoters.'+
+'4356 Sunset Blvd Los Angeles CA'+
+'<img src="http://logoonline.mtvnimages.com/uri/mgid:uma:image:logotv.com:10683224?quality=0.8&format=jpg&height=495&width=660" />'
+'</div>'+
+'</div>';
+
+var infowindow18 = new google.maps.InfoWindow({
+content: contentString
+
+});
+marker21.addListener('click', function() {
+infowindow21.open(map, marker21);
+});
+
+
+
+marker22 = new google.maps.Marker({
+  map: map,
+  draggable: false,
+  animation: google.maps.Animation.DROP,
+  position: {lat:34.090593, lng:-118.367919}
+});
+var contentString = '<div id="content4">'+
+'<div id="siteNotice">'+
+'</div>'+
+'<h4 id="firstHeading" class="firstHeading">Gold Coast</h4>'+
+'<div id="bodyContent">'+
+'8228 Santa Monica Blvd West Hollywood'+
+'<img src="http://static.panoramio.com/photos/large/55989012.jpg" />'
+'</div>'+
+'</div>';
+
+var infowindow22 = new google.maps.InfoWindow({
+content: contentString
+
+});
+marker22.addListener('click', function() {
+infowindow22.open(map, marker22);
+});
+
+
+
+marker23 = new google.maps.Marker({
+  map: map,
+  draggable:false,
+  animation: google.maps.Animation.DROP,
+  position: {lat:42.344708, lng:-71.070076}
+});
+var contentString = '<div id="content4">'+
+'<div id="siteNotice">'+
+'</div>'+
+'<h4 id="firstHeading" class="firstHeading">The Boston Eagle</h4>'+
+'<div id="bodyContent">'+
+'520 Tremont Street Boston MA'+
+'number-(617-542-4494)'+
+'<img src="http://www.gaybarsandclubs.com/images/NewEngland/Boston/eagle%206%20l.jpg" />'
+'</div>'+
+'</div>';
+
+var infowindow23 = new google.maps.InfoWindow({
+content: contentString
+
+});
+marker23.addListener('click', function() {
+infowindow23.open(map, marker23);
+});
+
+
+
+marker24 = new google.maps.Marker({
+  map: map,
+  draggable: false,
+  animation: google.maps.Animation.DROP,
+  position: {lat:42.348483, lng:-71.072441}
+});
+var contentString = '<div id="content4">'+
+'<div id="siteNotice">'+
+'</div>'+
+'<h4 id="firstHeading" class="firstHeading">Club Cafe</h4>'+
+'<div id="bodyContent">'+
+'Dancing and drinks includes some fun nights in the week.'
+'209 Columbus Avenue Boston MA'
+'number-(617-536-0966)'+
+'<img src="http://cdn.partyearth.com/photos/fb88a5d63b3a1e395356a3da57b0eee0/club-cafe_s165x110.jpg?1375090239" />'
+'</div>'+
+'</div>';
+
+var infowindow24 = new google.maps.InfoWindow({
+content: contentString
+
+});
+marker24.addListener('click', function() {
+infowindow24.open(map, marker24);
+});
+
+
+
+marker25 = new google.maps.Marker({
+  map: map,
+  draggable: false,
+  animation: google.maps.Animation.DROP,
+  position: {lat:42.344878, lng:-71.095800}
+});
+var contentString = '<div id="content4">'+
+'<div id="siteNotice">'+
+'</div>'+
+'<h4 id="firstHeading" class="firstHeading">Machine</h4>'+
+'<div id="bodyContent">'+
+'1254 Boylston Streen Boston MA'+
+'Is the "go to after-party spot" with good music and known to be a nice place.'
+'<img src="https://www.bu.edu/today/files/2012/09/t_418840_430485116994254_2016308411_n-332x221.jpg" />'
+'</div>'+
+'</div>';
+
+var infowindow25 = new google.maps.InfoWindow({
+content: contentString
+
+});
+marker25.addListener('click', function() {
+infowindow25.open(map, marker25);
+});
+
+
+
+marker26 = new google.maps.Marker({
+  map: map,
+  draggable: false,
+  animation: google.maps.Animation.DROP,
+  position: {lat:40.738016, lng:-74.001110}
+});
+
+var contentString = '<div id="content4">'+
+'<div id="siteNotice">'+
+'</div>'+
+'<h4 id="firstHeading" class="firstHeading">The Center</h4>'+
+'<div id="bodyContent">'+
+'208 W 13th Street New York 10011'+
+'The Lesbian Gay Bisexual and Transgender Community Center'
+'</div>'+
+'</div>';
+
+
+var infowindow26 = new google.maps.InfoWindow({
+content: contentString
+
+});
+marker26.addListener('click', function() {
+infowindow26.open(map, marker26);
+});
+
+      }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
+    </script>
+
+
+
+<p class="speech">Here are some companies to support and some to not support.
+It's important to know the companies that are not supporting the LGBTQ community and contribute to making a change.
+</p>
+
+      <div class="row">
+
+        <div class="col-xs-6">
+          <h2 id="gcompanies">Comapnies to Promote</h2>
+          <img id="gcompaniesimg" src="Transcomp.png" />
+          </div>
+
+
+          <div class="col-xs-6">
+            <h3 id="nosupport">Companies to NOT support</h3>
+            <img id="nosupportimg" src="nosupport.png" />
+            </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

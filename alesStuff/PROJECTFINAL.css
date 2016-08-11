@@ -1,0 +1,173 @@
+
+body{
+  margin-top: 0px;
+  background-color: lightblue;
+
+}
+
+.infographic{
+width: 200px;
+height:500px;
+padding-left:
+
+}
+
+#header{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 300px;
+  background-image: url("transuniteheader.png");
+  background-size: 1150px, 200px;
+
+}
+.navbarul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: cornflowerblue;
+
+}
+
+.carouselpic1{
+  padding-left: 150px;
+}
+.carouselpic2{
+padding-left: 300px
+}
+.carouselpic3{
+padding-left: 300px
+}
+.carouselpic4{
+padding-left: 300px;
+}
+.carouselpic5{
+padding-left: 200px;
+}
+.carouselpic6{
+padding-left: 350px;
+
+}
+
+.row{
+  float: center;
+}
+
+.navbarli {
+    float:left;
+
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover:not(.active) {
+    background-color: lightblue;
+}
+h1{
+  text-align: center;
+}
+a{
+  color: maroon;
+  size:60px;
+}
+
+.speech{
+    position: relative;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    background-color: #fff;
+    border: 8px solid #666;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 2px 2px 4px #888;
+    -moz-box-shadow: 2px 2px 4px #888;
+    box-shadow: 2px 2px 4px #888;
+
+}
+
+#spicer{
+  width: 200px;
+  height:200px;
+  border-radius: 50%
+}
+
+#kala{
+  width: 200px;
+  height: 200px;
+  border-radius:50%
+}
+
+#ale{
+  width:200px;
+  height:200px;
+  border-radius:50%
+
+}
+
+#jaquai{
+  width:200px;
+  height:200px;
+  border-radius:50%
+}
+
+#camille{
+  width: 200px;
+  height:200px;
+  border-radius: 50%
+}
+
+.blur1{
+-webkit-filter: blur(10px);
+}
+
+.blur1:hover{
+  -webkit-filter: blur(0px);
+}
+.blur2 {
+  -webkit-filter: blur(10px);
+}
+
+.blur2:hover{
+  -webkit-filter: blur(0px);
+}
+
+.blur3 {
+  -webkit-filter: blur(10px);
+}
+
+.blur3:hover{
+  -webkit-filter: blur(0px);
+}
+
+.blur4 {
+  -webkit-filter: blur(10px);
+}
+
+.blur4:hover{
+  -webkit-filter: blur(0px);
+}
+
+.blur5 {
+  -webkit-filter: blur(10px);
+}
+
+.blur5:hover{
+  -webkit-filter: blur(0px);
+}
+
+.blur6 {
+  -webkit-filter: blur(10px);
+}
+
+.blur6:hover{
+  -webkit-filter: blur(0px);
+}
